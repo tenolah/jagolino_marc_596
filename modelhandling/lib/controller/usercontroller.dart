@@ -13,9 +13,10 @@ class UserController {
   Future<void> addUser(User user) async {
     await supabase.from('users').insert(user.toMap());
   }
-
+  // Curry FoodShaka
   // Delete user
   Future<void> deleteUser(int id) async {
     await supabase.from('users').delete().eq('id', id);
   }
 }
+
