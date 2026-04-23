@@ -1,0 +1,8 @@
+#11: Call controller.deleteStudent() /student_page.dart
+await controller.deleteStudent(id);
+
+#12: Add Supabase URL and Anon Key /main.dart
+await Supabase.initialize(
+    url: 'YOUR_SUPABASE_URL',
+    anonKey: 'YOUR_SUPABASE_ANON_KEY',
+  );
